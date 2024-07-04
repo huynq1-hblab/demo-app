@@ -1,12 +1,15 @@
 .top-followers {
-  background-color: #f0f0f0;
-  padding: 20px;
+  background-color: #000;
   border-radius: 8px;
 }
 
 .top-followers h3 {
   margin: 0 0 10px 0;
-  font-size: 1.5em;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: #fff;
 }
 
 .top-followers ul {
@@ -15,6 +18,9 @@
 }
 
 .top-followers ul li {
-  margin: 10px 0;
-  font-size: 1.2em;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #fff;
 }

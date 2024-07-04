@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "../styles/Navigation.css";
+import { BiShapeCircle } from "react-icons/bi";
+import { FaChevronDown } from "react-icons/fa";
 
-const Tabs = () => {
+const Navigation = () => {
   const [activeTab, setActiveTab] = useState("Portfolio");
 
   const handleTabClick = (tabName) => {
@@ -21,8 +23,17 @@ const Tabs = () => {
           </li>
         ))}
       </ul>
+      <div className="left-items">
+        <div className="left-icon">
+          <BiShapeCircle size={20} />
+        </div>
+        <p>All Network</p>
+        <div className="right-icon">
+          <FaChevronDown  size={20} />
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Tabs;
+export default Navigation;

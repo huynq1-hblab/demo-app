@@ -1,10 +1,91 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Header.css";
 import { IoIosClose } from "react-icons/io";
 import { BiCopy } from "react-icons/bi";
 import { GoArrowUpRight } from "react-icons/go";
+import ReactApexChart from "react-apexcharts";
 
 const Header = () => {
+  const [options] = useState({
+    chart: {
+      height: 350,
+      type: "radialBar",
+      toolbar: {
+        show: false,
+      },
+    },
+    plotOptions: {
+      radialBar: {
+        startAngle: -115,
+        endAngle: 115,
+        hollow: {
+          margin: 0,
+          size: "75%",
+          image: undefined,
+          imageOffsetX: 0,
+          imageOffsetY: 0,
+          position: "front",
+          dropShadow: {
+            enabled: true,
+            top: 3,
+            left: 0,
+            blur: 4,
+            opacity: 0.24,
+          },
+        },
+        track: {
+          background: "#1C1C1C",
+          strokeWidth: "100%",
+          margin: 0,
+          dropShadow: {
+            enabled: true,
+            top: -3,
+            left: 0,
+            blur: 4,
+            opacity: 0.95,
+          },
+        },
+        dataLabels: {
+          show: true,
+          name: {
+            offsetY: -10,
+            show: true,
+            fontSize: "12px",
+            fontWeight: "400",
+            color: "rgba(255, 255, 255, 0.7)",
+            marginBottom: "5",
+          },
+          value: {
+            formatter(val) {
+              return parseInt(1000*val/100);
+            },
+            color: "#fff",
+            fontSize: "20px",
+            show: true,
+          },
+        },
+      },
+    },
+    fill: {
+      type: "gradient",
+      gradient: {
+        shade: "dark",
+        type: "horizontal",
+        shadeIntensity: 1,
+        gradientToColors: ["#ACFD00"],
+        inverseColors: false,
+        opacityFrom: 1,
+        opacityTo: 1,
+        stops: [0, 100],
+      },
+    },
+    stroke: {
+      lineCap: "round",
+    },
+    labels: ["Excellent"],
+  });
+
+  const [series] = useState([86]);
   return (
     <header className="header">
       <div className="user">
@@ -35,10 +116,19 @@ const Header = () => {
       </div>
       <div className="left-side">
         <div className="circle-chart">
-          <p></p>
+          <div id="card">
+            <div id="chart">
+              <ReactApexChart
+                options={options}
+                series={series}
+                type="radialBar"
+                height={350}
+              />
+            </div>
+          </div>
         </div>
         <div className="icon-close">
-          <IoIosClose />
+          <IoIosClose size={60} />
         </div>
       </div>
     </header>

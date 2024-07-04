@@ -1,36 +1,73 @@
-.xscore {
-  background-color: #000;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
+.chart-container {
+  background: linear-gradient(
+      241.17deg,
+      #111111 0.89%,
+      rgba(23, 23, 23, 0) 90.72%
+    ),
+    radial-gradient(
+        84.57% 84.57% at 2.16% 2.61%,
+        rgba(172, 253, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+      50% 78.94% at 100% 100%,
+      rgba(0, 240, 255, 0.2) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  border-radius: 20px;
+  position: relative;
 }
 
-.xscore h3 {
-  margin: 0 0 10px 0;
-  font-size: 1.5em;
+.text-info {
+  padding: 30px 30px 0px 30px;
 }
 
-.xscore .score {
+.text-info .text-header {
+  color: #acfd00;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  padding: 0px;
+}
+
+.text-info p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+
+.chart-range {
+  position: absolute;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+  margin: 0 28%;
+  bottom: 10px;
+  width: 220px;
+}
+
+.custom-button {
+  position: absolute;
+  margin: 0 40%;
+  bottom: 45px;
+  display: flex;
   align-items: center;
-  font-size: 2em;
-  margin: 20px 0;
-}
-
-.xscore .score p {
-  margin: 0 10px;
-}
-
-.xscore button {
-  padding: 10px 20px;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #00F0FF 0%, #ACFD00 100%);
   border: none;
-  border-radius: 4px;
-  background-color: #007bff;
-  color: white;
+  border-radius: 25px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
   cursor: pointer;
 }
 
-.xscore button:hover {
-  background-color: #0056b3;
+.button-logo {
+  width: 24px;
+  height: 24px;
 }
