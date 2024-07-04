@@ -1,0 +1,97 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  height: 116px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.user {
+  display: flex;
+}
+
+.avatar {
+  width: 116px;
+  height: 116px;
+  border-radius: 15px;
+}
+
+.ethereum {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.user-info {
+  margin-left: 20px;
+}
+
+.user-account {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-info h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #00f0ff;
+}
+
+.user-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.user-info h2 {
+  margin: 5px 0;
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: 500;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  background: #98fe14;
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  max-width: fit-content;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 20px;
+}
+
+.circle-chart {
+  width: 159.31px;
+  height: 116px;
+  top: 56.73px;
+  left: 895.69px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #98fe14;
+}
+
+.icon-close {
+  color: white;
+  font-size: 3.2rem;
+  cursor: pointer;
+  top: 0px;
+  right: 0px;
+}

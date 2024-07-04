@@ -1,0 +1,36 @@
+.xscore {
+  background-color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.xscore h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+}
+
+.xscore .score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.xscore .score p {
+  margin: 0 10px;
+}
+
+.xscore button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.xscore button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,40 @@
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 207px;
+  left: 314px;
+  width: 412px;
+  height: 36px;
+  opacity: 1;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  padding: 8px 16px;
+  border-radius: 100px; 
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  background-color: white;
+  color: black;
+}
+
+.tab:hover {
+  opacity: 0.7;
+}

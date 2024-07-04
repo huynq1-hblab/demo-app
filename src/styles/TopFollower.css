@@ -1,0 +1,20 @@
+.top-followers {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.top-followers h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+}
+
+.top-followers ul {
+  list-style: none;
+  padding: 0;
+}
+
+.top-followers ul li {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
